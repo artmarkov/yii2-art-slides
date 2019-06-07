@@ -1,0 +1,23 @@
+{
+  "name": "artsoft/yii2-art-slides",
+  "description": "HTML Slides Module For Art CMS",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Artur Markov",
+      "email": "artmarkov@mail.ru"
+    }
+  ],
+  "require": {
+    "artsoft/yii2-art-core": "dev-master",
+    "artsoft/yii2-art-media": "dev-master"
+  },
+  "extra": {
+    "bootstrap": "artsoft\\slides\\Bootstrap"
+  },
+  "autoload": {
+    "psr-4": {
+      "artsoft\\slides\\": ""
+    }
+  }
+}
