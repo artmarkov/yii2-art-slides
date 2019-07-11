@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model artsoft\slides\models\Slides */
 
-$this->title = Yii::t('yii', 'Update') . ': ' . $model->name;
+$this->title = Yii::t('art', 'Update "{item}"', ['item' => $model->name]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('art/slides', 'Slides'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = Yii::t('yii', 'Update');
 ?>

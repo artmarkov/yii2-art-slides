@@ -3,13 +3,13 @@
 namespace artsoft\slides\controllers;
 
 use Yii;
-use backend\controllers\DefaultController;
+use artsoft\controllers\admin\BaseController;
 use artsoft\slides\models\SlidesLayers;
 
 /**
  * SlidesLayersController implements the CRUD actions for artsoft\slides\models\SlidesLayers model.
  */
-class SlidesLayersController extends DefaultController 
+class SlidesLayersController extends BaseController 
 {
     public $modelClass       = 'artsoft\slides\models\SlidesLayers';
     public $modelSearchClass = '';
