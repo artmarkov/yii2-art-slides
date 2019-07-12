@@ -51,7 +51,7 @@ use yii\widgets\Pjax;
                 return Html::a('<span class="glyphicon glyphicon-remove text-color-default" aria-hidden="true"></span>', ['/slides/slides-layers/remove'], [
                             'title' => Yii::t('yii', 'Delete'),
 //                          'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
-                            'class' => 'btn btn-xs btn-default remove-layers',
+                            'class' => 'btn btn-xs btn-danger remove-layers',
                             'data-id' => $model->id,
                 ]);
             },
@@ -66,7 +66,7 @@ use yii\widgets\Pjax;
                         <div class="col-md-6">
 
                              <?= Html::a(Yii::t('art/slides', 'Add Layers'), ['/slides/slides-layers/init-layers'], [
-                                                'class' => 'btn btn-sm btn-primary add-to-slides-layers',
+                                                'class' => 'btn btn-sm btn-success add-to-slides-layers',
                                                 'data-id' => $model->id,
                                         ]);
                             ?>
