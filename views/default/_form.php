@@ -180,7 +180,7 @@ use artsoft\helpers\Html;
 <!--        модал добавления слоя в слайд-->
 <?php
 \yii\bootstrap\Modal::begin([
-    'header' => '<h3 class="lte-hide-title page-title">' . Yii::t('art/slides', 'Add Layers') . '</h3>',
+    'header' => '<h3 class="page-title">' . Yii::t('art/slides', 'Add Layers') . '</h3>',
     'size' => 'modal-lg',
     'id' => 'slides-layers-modal',
         //'footer' => 'footer',

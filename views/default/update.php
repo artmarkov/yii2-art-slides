@@ -10,6 +10,10 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('art/slides', 'Slides'), 'ur
 $this->params['breadcrumbs'][] = Yii::t('yii', 'Update');
 ?>
 <div class="slides-update">
-    <h3 class="lte-hide-title"><?= Html::encode($this->title) ?></h3>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title"><?=  Html::encode($this->title) ?></h3>            
+        </div>
+    </div>
     <?= $this->render('_form', compact('model')) ?>
 </div>
