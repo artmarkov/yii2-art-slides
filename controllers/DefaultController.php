@@ -59,7 +59,7 @@ class DefaultController extends BaseController
                 $model_layers->slides_id = $model->id;
                 $model_layers->save();
             }
-            Yii::$app->session->setFlash('crudMessage', Yii::t('art/slides', 'Your item has been copied.'));
+            Yii::$app->session->setFlash('success', Yii::t('art/slides', 'Your item has been copied.'));
             return $this->redirect($this->getRedirectPage('update', $model));
         }
 
