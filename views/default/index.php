@@ -69,17 +69,15 @@ $this->params['breadcrumbs'][] = $this->title;
                             return Html::encode($model->name);
                         },                        
                         'buttons' => [
-                            'url' => Url::to(['/slides/default/copy', 'id' => $model->id]),
                             'copy' => function ($url, $model, $key) {
-                                return Html::a(Yii::t('art/slides', 'Copy'), $url, 
+                                return Html::a(Yii::t('art/slides', 'Copy'), ['/slides/default/copy', 'id' => $model->id], 
                                     [
                                         'title' => Yii::t('art/slides', 'Copy'),
                                         'data-pjax' => 0,
                                         'data-confirm' => Yii::t('art/slides', 'The item will be copied. Are you sure?'),
                                     ]
                                 );
-                            },
-                            
+                            },        
                         ],
                         'buttonsTemplate' => '{update} {copy} {delete}',
                         'options' => ['style' => 'width:300px']
